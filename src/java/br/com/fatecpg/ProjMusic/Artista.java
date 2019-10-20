@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.fatecpg.itons;
+package br.com.fatecpg.ProjMusic;
 
 import java.util.ArrayList;
 
@@ -26,12 +26,8 @@ public class Artista {
         this.integrantes = integrantes;
     }
 
-    public String[] getIntegrantes() {
-        return integrantes;
-    }
-
-    public void setIntegrantes(String[] integrantes) {
-        this.integrantes = integrantes;
+    Artista(String engenheiro_do_Hawaii, String rock) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getNome() {
@@ -48,6 +44,14 @@ public class Artista {
 
     public void setGênero(String gênero) {
         this.gênero = gênero;
+    }
+
+    public String[] getIntegrantes() {
+        return integrantes;
+    }
+
+    public void setIntegrantes(String[] integrantes) {
+        this.integrantes = integrantes;
     }
 
     public ArrayList<Disco> getDiscos() {

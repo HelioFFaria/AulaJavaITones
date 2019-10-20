@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.fatecpg.itons;
+package br.com.fatecpg.ProjMusic;
 
 import java.util.ArrayList;
 

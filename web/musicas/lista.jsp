@@ -1,11 +1,6 @@
-<%-- 
-    Document   : index
-    Created on : 23/09/2019, 19:52:12
-    Author     : a
---%>
 
-<%@page import="br.com.fatecpg.itons.Musica"%>
-<%@page import="br.com.fatecpg.itons.Db" %>
+<%@page import="br.com.fatecpg.ProjMusic.Musica"%>
+<%@page import="br.com.fatecpg.ProjMusic.Db" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -35,6 +30,7 @@
                 <td><%= musicas.getAutoria() %></td>
             </tr>
             <% } %>
-        </table>
+        </table><br/>
+        <%@include file="../WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>

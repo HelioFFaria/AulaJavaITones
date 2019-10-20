@@ -1,11 +1,11 @@
 <%-- 
-    Document   : index
-    Created on : 23/09/2019, 19:52:12
-    Author     : a
+    Document   : dados
+    Created on : 20/10/2019, 01:25:57
+    Author     : helio
 --%>
-
-<%@page import="br.com.fatecpg.itons.Artista"%>
-<%@page import="br.com.fatecpg.itons.Db" %>
+<%@page import="br.com.fatecpg.ProjMusic.Artista"%>
+<%@page import="br.com.fatecpg.ProjMusic.Db" %>
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -14,7 +14,7 @@
         <title>Artistas</title>
     </head>
     <body>
-        <%@include file="../WEB-INF/jspf/menu.jspf" %>
+        <%@include file="../WEB-INF/jspf/menu.jspf"%>
         <h1>Artistas</h1>
         <table border="1">
             <tr>
@@ -25,8 +25,12 @@
             </tr>
             <% for(Artista artista: Db.getArtistas()) { %>
             <tr>
+                <td>
+                    <a href="dados.jsp?i=<%=Db.getArtistaIndex(artista)%> ">
+                        <%= artista.getNome()%>
+                    </a>
+                </td>
                 <td><%= artista.getNome() %></td>
-                <td><%= artista.getGênero() %></td>
                 <td>
                     <% for(String integrante: artista.getIntegrantes()) { %>
                         <%= integrante %><br/>
@@ -35,6 +39,7 @@
                 <td><%= artista.getDiscos().size() %></td>
             </tr>
             <% } %>
-        </table>
+        </table><br/>
+         <%@include file="../WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>
