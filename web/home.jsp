@@ -82,7 +82,7 @@
                     <div class="col sbase">
                         <img src="img/emerson.jpg" class="avatar"/><br/>
                         <p class="a" style="color: white"><span>Emerson Matheus</span><br/>
-                        INTERFACE</p>
+                        GERAL</p>
                     </div>
                     <div class="col sbase">
                         <img src="img/helio.jpg" class="avatar"/><br/>
