@@ -143,3 +143,25 @@ tbody td.td-padding {
     color: white !important;
     text-decoration: none !important;
 } 
+
+.btn-custom {
+    position: absolute;
+    background: #4666FF;
+	bottom: 15px;
+	height: 10px !important;
+	width: 20px !important;
+	border-radius: 0px;
+	text-align: center;
+	padding: 1px, 15px, 3px, 2px;
+}
+
+.btn-custom:hover {
+    position: absolute;
+    background: #fff;
+    height: 10px !important;
+	width: 20px !important;
+	color: #4666FF;
+	border: #4666FF;
+	transition: 0.3s;
+	padding: 1% 3% 1% 3%;
+}
