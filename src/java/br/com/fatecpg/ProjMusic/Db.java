@@ -23,27 +23,38 @@ public class Db {
    public static ArrayList<Artista> getArtistas(){
     if(artistas == null){
         artistas = new ArrayList<>();
-        Musica a1m1 = new Musica("O Papa é pop", 190, "Rock", "Humberto G.");
-        Musica a1m2 = new Musica("Pra ser sincero", 181, "Rock", "Humberto G.");
-        Disco a1d1 = new Disco("O papa é pop", 1990, "BMG");
+        Musica a1m1 = new Musica("Everybody's Changing", 250, "Pop Rock", "Tom Chaplin, Tim Rice-Oxley");
+        Musica a1m2 = new Musica("Somewhere Only We Know", 214, "Pop Rock", "Tom Chaplin, Tim Rice-Oxley");
+        Disco a1d1 = new Disco("Hopes and Fears", 2004, "Island Records");
         a1d1.getMusicas().add(a1m1);
         a1d1.getMusicas().add(a1m2);
-        Artista a1 = new Artista("Engenheiro do Hawaii", "Rock", new String[]{"Humberto G.", "Carlos Stein", "Carlos Maltz"});
+        Musica a1m3 = new Musica("Silenced by the Night", 190, "Pop Rock", "Tom Chaplin, Tim Rice-Oxley");
+        Musica a1m4 = new Musica("Sovereign Light Café", 203, "Pop Rock", "Tom Chaplin, Tim Rice-Oxley");
+        Disco a1d2 = new Disco("Strangeland", 2012, "Island Records");
+        a1d2.getMusicas().add(a1m3);
+        a1d2.getMusicas().add(a1m4);
+        Artista a1 = new Artista("Keane", "Rock", new String[]{"Tom Chaplin", "Tim Rice-Oxley", "Richard Hughes", "Jesse Quin"});
         a1.getDiscos().add(a1d1);
+        a1.getDiscos().add(a1d2);
         artistas.add(a1);
-        Musica a2m1 = new Musica("Sweet child of mim", 480, "Rock", "Axl, Slash");
-        Musica a2m2 = new Musica("Paradise City", 510, "Rock", "Axl, Slash");
-        Disco a2d1 = new Disco("Apetite for destruction", 1987, "Geffen");
+        
+        Musica a2m1 = new Musica("Indestructible", 263, "Heavy Metal", "Dan Donegan, Mike Wengren");
+        Musica a2m2 = new Musica("Inside the Fire", 211, "Heavy Metal", "Dan Donegan, David Draiman");
+        Disco a2d1 = new Disco("Indestructible", 2008, "Reprise Records");
         a2d1.getMusicas().add(a2m1);
         a2d1.getMusicas().add(a2m2);
-        Musica a2m3 = new Musica("Civil War", 385, "Rock", "Axl, Slash");
-        Musica a2m4 = new Musica("Don't cry", 410, "Rock", "Axl, Slash");
-        Disco a2d2 = new Disco("Use your ilusion II", 1992, "Virgin");
-        a2d2.getMusicas().add(a2m3);
-        a2d2.getMusicas().add(a2m4);
-        Artista a2 = new Artista("Guns 'n Roses", "Rock", new String[]{"Axl", "Slash"});
-        a2.getDiscos().add(a2d2);
+        Artista a2 = new Artista("Disturbed", "Heavy Metal", new String[]{"Dan Donegan", "Mike Wengren", "David Draiman", "John Moyer"});
+        a2.getDiscos().add(a2d1);
         artistas.add(a2);
+
+        Musica a3m1 = new Musica("I Was Made for Lovin' You", 258, "Hard Rock", "Paul Stanley, Vini Poncia");
+        Musica a3m2 = new Musica("Sure Know Something", 214, "Hard Rock", "Paul Stanley, Vini Poncia");
+        Disco a3d1 = new Disco("Dynasty", 1979, "Casablanca Records");
+        a3d1.getMusicas().add(a3m1);
+        a3d1.getMusicas().add(a3m2);
+        Artista a3 = new Artista("KISS", "Heavy Metal", new String[]{"Paul Stanley", "Gene Simmons", "Eric Singer", "Tommy Thayer"});
+        a3.getDiscos().add(a3d1);
+        artistas.add(a3);
     }
     Collections.sort(artistas, new Comparator<Artista>() {
             @Override

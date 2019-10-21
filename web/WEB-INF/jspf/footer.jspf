@@ -1,8 +1,26 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<p><h3>Desenvolvido por:</h3><p>
-<p><h4>Alex Vaz</h4><p>
-<p><h4>Emerson Matheus</h4><p>
-<p><h4>Helio Faria</h4><p>
-<p><h4>Julio Takeda</h4><p>
-<p><h4>Tales Parisotto</h4><p>
+<div class="d-flex bd-highlight mb-3 container3 font">
+    <div class="p-2 bd-highlight">
+        <p>Desenvolvido por<p>
+        <p class="b">Alex Vaz</p>
+        <p class="b">Emerson Matheus</p>
+        <p class="b">Helio Faria</p>
+        <p class="b">Julio Takeda</p>
+        <p class="b">Tales Parisotto</p>        
+    </div>
+    <div class="p-2 bd-highlight"></div>
+    <div class="p-2 bd-highlight">
+        <p>Serviços</p>
+        <div>
+            <a class="nav-item nav-link" style="color: inherit !important;
+    text-decoration: none !important;" href="<%= request.getContextPath()%>/home.jsp">Home</a>
+            <a class="nav-item nav-link" style="color: inherit !important;
+    text-decoration: none !important;" href="<%= request.getContextPath() %>/artistas/lista.jsp">Artistas</a>
+            <a class="nav-item nav-link" style="color: inherit !important;
+    text-decoration: none !important;" href="<%= request.getContextPath() %>/discos/lista.jsp">Álbuns</a>
+            <a class="nav-item nav-link"  style="color: inherit !important;
+    text-decoration: none !important;"href="<%= request.getContextPath() %>/musicas/lista.jsp">Músicas</a>
+        </div>
+    </div>
+</div>

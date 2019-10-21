@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Gotham-Light;
+    src: local(Gotham-Light), url(../font/Gotham-Light.otf)
+}
+
+@font-face {
+    font-family: Gotham-Thin;
+    src: local(Gotham-Thin), url(../font/Gotham-Thin.otf)
+}
+
+body {
+    display: flex;
+    flex-direction: column !important;
+} 
+
+h3, h4 {
+    color: #4666FF;
+}
+
+h5 {
+    color: white;
+    text-decoration: none !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.font {
+    font-family: Gotham-Light !important;
+ }
+
+.nav-link{
+    font-family: Gotham-Light !important;
+}
+
+.container1 {
+    width: 90ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em 0;
+    flex: 1 0 auto !important;
+    word-wrap: break-word;
+}
+
+.container4 {
+    width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em 0;
+    flex: 1 0 auto !important;
+    word-wrap: break-word;
+}
+
+.container2 {
+    width: 90ch;
+    margin-left: 13%;
+    margin-right: auto;
+    padding: 1.5em 0;
+    flex: 1 0 auto !important   ;
+    word-wrap: break-word;
+}
+
+.container3 {
+    margin: 10px 20px;
+    padding: 0 0;   
+}
+
+.bg1 {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgba(152,152,152,1) 100%);
+}
+.bg2 {
+    background-color: #000 !important;
+}
+
+.avatar {
+    height: 80px;
+    width: 80px;
+    border: 1px solid #4666FF;
+    border-radius: 50%;
+    margin: 0px 10px 10px 0 !important;
+}
+
+.footer {
+    flex-shrink: 0 !important;
+    width: 100%;
+    background-color: #3c4043;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: Gotham-Light !important;
+}
+
+.footer p{
+    font-size: 12px;
+    text-decoration: none;
+    font-family: Gotham-Light !important;
+}
+
+table {
+	background: rgb(255, 255, 255) transparent;
+	display: table;
+	border-collapse: separate !important;
+	border-spacing: 1px;
+    border-color: #FFF;
+    text-decoration: none !important;
+    color: #fff;
+}
+
+thead {
+	background-color: #4666FF !important;
+}
+
+thead th {
+    font-family: Gotham-Light !important;
+    font-size: 1.1em;
+	font-weight: 400;
+	color: #fff;
+    text-align: center;
+    padding: 10px 60px;
+    background-color: #4666FF !important;
+    text-decoration: none !important;
+}
+
+tbody td {
+    font-family: Gotham-Light !important;
+	font-size: 1.1em;
+	font-weight: 400;
+    text-align: left;
+    text-decoration: none !important;
+}
+
+tbody td.td-center {
+	text-align: center;
+}
+
+tbody td.td-padding {
+	padding: 4px;
+}
+
+.a { 
+    color: white !important;
+    text-decoration: none !important;
+} 
